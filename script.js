@@ -10,7 +10,8 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
         while (addEmployees) {
             let firstName = prompt("Please add employee's first name:");
             let lastName = prompt("Please add employee's last name:");
-            let salary = prompt("Please enter employee's salary:");
+            let salaryAnswer = prompt("Please enter employee's salary:");
+            let salary = isNaN(parseInt(salaryAnswer)) ? 0 : parseInt(salaryAnswer);
             
             employeesArr.push(
                 {
