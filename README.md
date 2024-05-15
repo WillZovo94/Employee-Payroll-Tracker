@@ -8,7 +8,7 @@
 
 ## Usage 
 - You are given a responsive window that shows the employee payroll tracker in the following image.
-![Main Window](/assets/Employee-Tracker-Main.png)
+![Main Window](/assets/employee-tracker-main.png)
 - You're able to interact with the add employees button, which uses prompts to store the information into variables.
 - While it cycles through all the information, it will also give the ability to add more employees if desired using a while loop.
 - Once all inputs are created, you'll have access to the list of employee information on the window, as well as the console too.
