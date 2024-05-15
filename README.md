@@ -14,6 +14,8 @@
 - Once all inputs are created, you'll have access to the list of employee information on the window, as well as the console too.
 - The console will also present the average salaries of all your employees using .reduce method with an arrow function.
 - Lastly, the console will present a randomly selected employee to be picked as the winner of the draw. This is mainly created using Math.random and Math.floor.
+- All of those listened are shown here:
+![All functionality](/assets/employee-tracker-purpose.png)
 
 ## Features 
 - Access to the add employees button which will ask for first name, last name, and employee's salary.
