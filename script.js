@@ -29,6 +29,11 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
         return employeesArray;
     };
 
+    /* The code above uses a while loop inside the function. While the condition addEmployees = true, the while loop will continue to repeat itself. It helps push the content inside of 
+    the array using prompts to save the variables. Eventually, it'll use a new variable with a prompt with a (yes/no) or, in my case, (continue / cancel) boolean. Then the initial condition of
+    addEmployees will check if that prompt to continue was true / "continue" and if it is, to act as true, so the while loop can run again. */
+
+
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
@@ -37,6 +42,9 @@ const displayAverageSalary = function(employeesArray) {
   let salaryTotal = salarySum / employeesArray.length;
   console.log(`The average employee salary between our employee(s) is $${salaryTotal}`);
 };
+
+/* This code uses .reduce() Method to essentially add the total of the employeesArray using an arrow function. Then, within that arrow function, adds the total condition with employeesArray.salary with the initial
+value of 0. Afterwards, you simply add another variable and equal it with that previous variable work along with dividing the employeesArray.length. Then use template literal to add the salaryTotal towards the console.*/
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
@@ -47,6 +55,10 @@ const getRandomEmployee = function(employeesArray) {
 
     return chosenEmployee;
 }
+
+/* This last code consists of a function that creates a new variable, so we can get a randomNumber generated. This variable uses Math.floor() which rounds a number downward. Then multiply Math.random() which generates a random number 
+of 0 - 1 with the total length of the employeesArray. Once that's done, we just make another variable called chosenEmployee and use the previous variable into the employeesArray selector. Then use template literal 
+to create a message on the console involving the chosenEmployee first name and last.*/
 
 /*
   ====================
